@@ -26,7 +26,7 @@ header{
     top: 0;
     left: 0;
     width: 100%;
-    height: 50px;
+    height: 35px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 .menu{
@@ -73,6 +73,7 @@ canvas {
     line-height: 1.2;
 }
 .hero-subtitle{
+    font-family: 'Bagel';
     font-size: 80px;
     margin-top: 20px;
     text-shadow: 4px 4px 10px rgba(104, 84, 47, 0.8);
@@ -189,13 +190,19 @@ footer{
 @media(min-width:319px) and (max-width:900px){
     header{
       width: 100%;
-      height: 40px;
+      height: 30px;
+      position: relative;
+    }
+    .menu-item{
+        margin: 10px 8px;
     }
     .menu-item a{
         font-size: 15px;
     }
+
     .hero-content{
         width: 60%;
+        margin-top: 20px;
     }
     .hero-subtitle{
         font-size: 25px;
@@ -215,8 +222,14 @@ footer{
     .input-box{
         width: 250px;
     }
+    .cta-button{
+        height: 15px;
+        width: 60px;
+        font-size: 15px;
+    }
     button{
         margin-left: 35px;
+        
     }
     footer{
         text-align: center;
