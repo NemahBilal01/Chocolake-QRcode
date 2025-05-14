@@ -1,0 +1,16 @@
+{
+  "name": "chocolake",
+  "version": "1.0.0",
+  "description": "ChocoLake QR generator and interactive form app",
+  "main": "js/qr-generator.js",
+  "scripts": {
+    "start": "node js/qr-generator.js"
+  },
+  "author": "Nemah Bilal",
+  "license": "MIT",
+  "dependencies": {
+    "inquirer": "^9.0.0",
+    "qr-image": "^3.2.0"
+  },
+  "type": "module"
+}

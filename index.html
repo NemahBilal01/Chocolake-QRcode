@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+  <title>ChocoLake</title>
+  <link rel="stylesheet" href="css/app.css" />
+</head>
+<body>
+  <header>
+    <div class="menu">
+      <div class="menu-item"><a href="#home">Home</a></div>
+      <div class="menu-item"><a href="#form">Form</a></div>
+      <div class="menu-item"><a href="#contact">Contact</a></div>
+    </div>
+  </header>
+
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <p class="hero-subtitle">Where Creativity Meets Innovation</p>
+      <img src="img/chocolate-jar.png" alt="Chocolate Jar" class="chocolate-jar" />
+      <a href="#form" class="cta-button">Fill Form</a>
+    </div>
+  </section>
+
+  <div class="container" id="form">
+    <div class="alert alert-success" style="display: none;">
+      Your form was submitted successfully!
+    </div>
+
+    <form action="#" method="POST">
+      <div class="user-details">
+        <div class="section"><span class="details">Order Number</span><input class="input-box" type="text" name="order_number" value="AUTO_GENERATED" readonly></div>
+        <div class="section"><span class="details">Machine Name & Number</span><input class="input-box" type="text" name="machine_info" value="" readonly></div>
+        <div class="section"><span class="details">Floor</span><input class="input-box" type="text" name="floor" required></div>
+        <div class="section"><span class="details">Building</span><input class="input-box" type="text" name="building" required></div>
+        <div class="section"><span class="details">Department</span><input class="input-box" type="text" name="department" required></div>
+        <div class="section"><span class="details">Fault</span><input class="input-box" type="text" name="fault" required></div>
+        <div class="section"><span class="details">Solution</span><input class="input-box" type="text" name="solution" required></div>
+        <div class="section"><span class="details">Used Parts</span><input class="input-box" type="text" name="used_parts"></div>
+        <div class="section"><span class="details">Technician</span><input class="input-box" type="text" name="technician" required></div>
+        <div class="section"><span class="details">Start Time</span><input class="input-box" type="text" name="start_time" value="AUTO_CAPTURED" readonly></div>
+        <div class="section"><span class="details">End Time</span><input class="input-box" type="text" name="end_time" value="AUTO_CAPTURED" readonly></div>
+        <div class="section">
+          <span class="details">Order Status</span>
+          <select class="input-box" name="order_status" required>
+            <option value="done">Done</option>
+            <option value="parts_needed">Parts Needed</option>
+            <option value="in_progress">In Progress</option>
+          </select>
+        </div>
+        <button type="submit" class="submit-button">Submit Report</button>
+      </div>
+    </form>
+  </div>
+
+  <footer id="contact">
+    <p>&copy; <span id="year"></span></p>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+  <script src="js/app.js"></script>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
