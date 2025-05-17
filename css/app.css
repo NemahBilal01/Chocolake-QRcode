@@ -79,7 +79,7 @@ canvas {
     text-shadow: 4px 4px 10px rgba(104, 84, 47, 0.8);
 }
 .chocolate-jar {
-    width: 400px;
+    width: 300px;
     height: auto;
     margin-top: 60px;
     margin-bottom: 40px;
@@ -204,7 +204,7 @@ footer{
         width: 60%;
         margin-top: 20px;
     }
-    .hero-subtitle{
+    .hero-subtitle{ 
         font-size: 25px;
         text-align: center;
         margin-top: 50px;
